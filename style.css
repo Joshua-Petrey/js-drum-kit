@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(stage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#container {
+    display: flex;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex: 1;
+
+}
+
+.key {
+
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: .7rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 8rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+
+.key > kbd{
+    font-size: 2.5rem;
+    color: rgb(255, 16, 8);
+}
+
+.sound {
+    color: rgb(24, 248, 128);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.playing {
+    transform: scale(1.2);
+    border-color: rgb(200, 176, 255);
+    border-width: 5px;
+    box-shadow: 0 0 4px black;
+}
